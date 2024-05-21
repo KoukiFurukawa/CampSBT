@@ -1,0 +1,124 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Locked",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Unlocked",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "locked",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"events": {
+				"Locked(uint256)": {
+					"details": "If a token is minted and the status is locked, this event should be emitted.",
+					"params": {
+						"tokenId": "The identifier for a token."
+					}
+				},
+				"Unlocked(uint256)": {
+					"details": "If a token is minted and the status is unlocked, this event should be emitted.",
+					"params": {
+						"tokenId": "The identifier for a token."
+					}
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"locked(uint256)": {
+					"details": "SBTs assigned to zero address are considered invalid, and queries about them do throw.",
+					"params": {
+						"tokenId": "The identifier for an SBT."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"events": {
+				"Locked(uint256)": {
+					"notice": "Emitted when the locking status is changed to locked."
+				},
+				"Unlocked(uint256)": {
+					"notice": "Emitted when the locking status is changed to unlocked."
+				}
+			},
+			"kind": "user",
+			"methods": {
+				"locked(uint256)": {
+					"notice": "Returns the locking status of an Soulbound Token"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ERC5192/IERC5192.sol": "IERC5192"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ERC5192/IERC5192.sol": {
+			"keccak256": "0x5a17ada75ebe5033cde034921a7ed7225754e1dc7336793da1c7f718ba60d558",
+			"license": "CC0-1.0",
+			"urls": [
+				"bzz-raw://fce71cbbea282ce9b3749b6979066c667de1b9388d9294479ff7ad6337e3ee44",
+				"dweb:/ipfs/QmVBo2BYnnGq5EY38v2qwxoZTU7fJvwLwkB2fPXsrnbrVB"
+			]
+		}
+	},
+	"version": 1
+}
